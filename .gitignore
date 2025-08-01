@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/team28HackathonAPI/.vs/
+/team28HackathonAPI/team28HackathonAPI/bin/
+/team28HackathonAPI/team28HackathonAPI/obj/
+/team28HackathonAPI/team28HackathonAPITests/bin/
+/team28HackathonAPI/team28HackathonAPITests/obj/
+

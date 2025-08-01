@@ -1,0 +1,46 @@
+use master
+go
+
+--ALTER DATABASE TEAM28MR SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+--GO
+
+--drop database TEAM28MR
+--go
+
+--DROP DATABASE  IF EXISTS TEAM28MR
+--GO
+
+CREATE DATABASE TEAM28MR;
+
+use TEAM28MR;
+go
+
+CREATE TABLE AppUser(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR (255) NOT NULL,
+    email VARCHAR (255) NOT NULL,
+    password VARCHAR (255) NOT NULL
+)
+
+CREATE TABLE DiagnosticTest(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    result VARCHAR (255) NOT NULL,
+    date DATETIME NOT NULL
+)
+
+CREATE TABLE MonitoredDestination(
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    location VARCHAR(255) NOT NULL, 
+    riskLevel VARCHAR(255) NOT NULL,
+    lastChecked DATETIME NOT NULL
+)
+CREATE TABLE Alerts (
+	id int IDENTITY (1,1) PRIMARY KEY,
+	[Message] VARCHAR(255) NOT NULL,
+	[Status] VARCHAR(255) NOT NULL, 
+	[Timestamp] datetime2 NOT NULL
+)
+
+INSERT INTO Alerts VALUES ('First Notification', 'success', '7/29/2025');
+INSERT INTO Alerts VALUES ('2nd Notification', 'info', '7/28/2025');

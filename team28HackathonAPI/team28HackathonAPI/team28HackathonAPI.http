@@ -1,0 +1,6 @@
+@team28HackathonAPI_HostAddress = http://localhost:5234
+
+GET {{team28HackathonAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

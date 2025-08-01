@@ -1,0 +1,34 @@
+.alert {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  transform: translateX(-50%) translateY(100px);
+  z-index: 100;
+  width: 300px; /* Adjust width as needed */
+  text-align: center;
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+/* Add this class when alert is visible */
+.alert.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+.sidenav {
+  width: 15%;
+  background: #f4f4f4;
+  padding: 1rem;
+}
+.section {
+  width: 85%;
+  padding: 2rem;
+  box-sizing: border-box;
+  background: #fff; /* Optional: set background */
+  overflow: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 91.5vh;
+}

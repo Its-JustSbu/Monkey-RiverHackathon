@@ -1,0 +1,14 @@
+.addButton {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 1rem 2rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 200;
+}
